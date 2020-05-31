@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.Master.cs" Inherits="FateSky.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>缘分的天空</title>
+    <link href="CSS/default.css" rel="stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" />
+    <script src="<%=ResolveClientUrl("~/JS/jquery-3.5.1.js")%>"></script>
+    <script src="<%=ResolveClientUrl("~/JS/main.js")%>"></script>
+    <script src="<%=ResolveClientUrl("~/JS/default.js")%>"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="bg-box">
+            <div id="bg-img"></div>
+            <div id="bg-img-bak"></div>
+        </div>
+        <div id="nav-bar">
+            <ul id="nav-link">
+                <li><a href="<%=ResolveClientUrl("~/Default.aspx")%>">首页</a></li>
+                <li>
+                    <a href="<%=ResolveClientUrl("~/Code/Code.aspx")%>">代码</a>
+                    <ul>
+                        <li><a href="<%=ResolveClientUrl("~/Code/AddRepository.aspx")%>">添加仓库</a></li>
+                        <li><a href="<%=ResolveClientUrl("~/Code/Code.aspx?language=java")%>">Java</a></li>
+                        <li><a href="<%=ResolveClientUrl("~/Code/Code.aspx?language=python")%>">Python</a></li>
+                        <li><a href="<%=ResolveClientUrl("~/Code/Code.aspx?language=c%23")%>">C#</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="<%=ResolveClientUrl("~/Anime/Anime.aspx")%>">动漫</a>
+                    <ul>
+                        <li><a href="<%=ResolveClientUrl("~/Anime/Anime.aspx")%>">查看动漫</a></li>
+                        <li><a href="<%=ResolveClientUrl("~/Anime/SetAnime.aspx")%>">添加动漫</a></li>
+                        <li><a href="<%=ResolveClientUrl("~/Anime/EditGrade.aspx")%>">修改评级</a></li>
+                    </ul>
+                </li>
+                <li><a href="<%=ResolveClientUrl("~/Note/Note.aspx")%>">记事本</a></li>
+            </ul>
+            <div id="nav-user">
+                当前用户：<asp:Literal ID="ltlUser" runat="server"></asp:Literal>
+                <div id="nav-info">
+                    <div>
+                        <div id="nav-img" class="button"><asp:ImageButton ID="ibtnAvatar" runat="server" OnClick="IbtnAvatar_Click" Width="100" Height="100" /></div>
+                    </div>
+                    <div>UID：<asp:Literal ID="ltlUid" runat="server"></asp:Literal></div>
+                    <div>用户名：<asp:Literal ID="ltlName" runat="server"></asp:Literal></div>
+                    <div id="nav-motto"><asp:Literal ID="ltlMotto" runat="server"></asp:Literal></div>
+                    <div>
+                        <asp:Button ID="btnEdit" runat="server" OnClick="BtnEdit_Click" CssClass="button" />
+                        <asp:Button ID="btnExit" runat="server" OnClick="BtnExit_Click" CssClass="button" OnClientClick="return check('确认退出吗？');" />
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-box">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

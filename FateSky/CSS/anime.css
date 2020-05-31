@@ -1,0 +1,130 @@
+﻿/*anime*/
+#anime-left {
+    width: 650px;
+    float: left;
+}
+
+#anime-right {
+    width: 300px;
+    float: right;
+}
+
+.anime-info {
+    width: 650px;
+    margin-bottom: 50px;
+}
+
+.anime-info-left, .anime-info-right {
+    float: left;
+}
+
+.anime-page {
+    width: 250px;
+    height: 357px;
+    margin: 50px 50px 30px 50px;
+}
+
+.anime-btn {
+    margin: 0 0 50px 50px;
+}
+
+.anime-btn > input {
+    margin-right: 10px;
+}
+
+.anime-info-right > div {
+    width: 230px;
+    margin: 50px 0;
+    line-height: 50px;
+}
+
+.anime-text, .anime-time > div {
+    height: auto;
+    padding: 0 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.anime-time > div {
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+    float: left;
+}
+
+#anime-search {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#ContentPlaceHolder1_txtSearch, #ContentPlaceHolder1_btnSearch {
+    margin: 50px 0 0 30px;
+}
+
+#ContentPlaceHolder1_txtSearch {
+    width: 200px;
+}
+
+#anime-select {
+    overflow: hidden;
+}
+
+#ContentPlaceHolder1_lstDate {
+    width: 300px;
+    height: 500px;
+    color: pink;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*set-anime*/
+#add-anime-box {
+    padding: 50px;
+}
+
+#anime-page {
+    float: left;
+    margin-right: 100px;
+}
+
+#anime-info {
+    float: left;
+}
+
+#add-anime-title, #add-anime-origin {
+    margin: 20px 0;
+}
+
+#ContentPlaceHolder1_fupPage, #ContentPlaceHolder1_txtTitle, #ContentPlaceHolder1_txtOrigin {
+    margin-top: 10px;
+}
+
+#add-anime-time, #add-anime-depict {
+    margin: 50px 0;
+}
+
+#add-anime-time > div {
+    float: left;
+    margin-right: 20px;
+}
+
+#ContentPlaceHolder1_dropYear, #ContentPlaceHolder1_dropMonth, #ContentPlaceHolder1_dropDepict {
+    margin-left: 20px;
+}
+
+/*edit-grade*/
+#grade-box {
+    padding: 50px;
+}
+
+#grade-box > div {
+    margin: 20px 0;
+}
+
+#grade-box input {
+    margin-left: 50px;
+}
+
+#save-btn input {
+    margin: 30px 0 0 0;
+}

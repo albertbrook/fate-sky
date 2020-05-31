@@ -1,0 +1,45 @@
+﻿/*code*/
+#ContentPlaceHolder1_btnAddRepo {
+    float: right;
+}
+
+table {
+    margin-bottom: 30px;
+    overflow: hidden;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+th, td {
+    padding: 10px;
+    border: 3px solid pink;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+th {
+    height: 50px;
+    background-color: pink;
+}
+
+/*add-repository*/
+#add-code-box {
+    padding: 50px;
+}
+
+#add-code-repository, #add-code-url {
+    margin: 20px 0;
+}
+
+#ContentPlaceHolder1_fupDemo, #ContentPlaceHolder1_txtRepository, #ContentPlaceHolder1_txtUrl {
+    margin-top: 10px;
+}
+
+#add-code-language {
+    margin: 50px 0;
+}
+
+#add-code-language > input {
+    margin: 0 20px;
+}

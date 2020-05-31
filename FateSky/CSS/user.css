@@ -1,0 +1,74 @@
+﻿/*edit-user*/
+#main-user {
+    padding: 50px;
+}
+
+#main-img {
+    float: left;
+}
+
+#main-info {
+    float: right;
+    margin-right: 55px;
+}
+
+#main-info div {
+    margin-bottom: 20px;
+}
+
+#ContentPlaceHolder1_txtName, #ContentPlaceHolder1_txtMotto {
+    margin-top: 10px;
+}
+
+#ContentPlaceHolder1_txtMotto {
+    height: 110px;
+    padding: 10px 20px;
+}
+
+#main-user #ContentPlaceHolder1_btnSave, #ContentPlaceHolder1_btnPwd {
+    margin-top: 20px;
+}
+
+#ContentPlaceHolder1_btnSave {
+    float: left;
+}
+
+#ContentPlaceHolder1_btnPwd {
+    float: right;
+}
+
+/*edit-pwd*/
+#main-pwd {
+    padding: 50px;
+}
+
+#main-pwd div {
+    margin: 20px 0;
+}
+
+#ContentPlaceHolder1_txtOldPwd, #ContentPlaceHolder1_txtNewPwd, #ContentPlaceHolder1_txtChkPwd {
+    margin-top: 10px;
+}
+
+#main-pwd #ContentPlaceHolder1_btnSave {
+    margin-top: 20px;
+}
+
+/*up-avatar*/
+#main-avatar {
+    padding: 50px;
+}
+
+#main-avatar-show {
+    margin-right: 50px;
+    float: left;
+}
+
+#main-avatar-up {
+    padding-top: 50px;
+    float: left;
+}
+
+#main-avatar-up #ContentPlaceHolder1_btnSave {
+    margin-top: 50px;
+}

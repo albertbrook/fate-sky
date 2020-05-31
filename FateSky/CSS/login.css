@@ -1,0 +1,60 @@
+body {
+	background-image: url("../Images/BGI/0.jpg");
+}
+
+#login-box {
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -200px;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	opacity: 0;
+}
+
+#login-box:hover {
+	box-shadow: 0 0 20px black;
+}
+
+#login-box > div {
+	width: 350px;
+	height: 80px;
+	margin: 36px auto;
+}
+
+#txtUser, #txtPwd {
+	width: 300px;
+	height: 80px;
+	background-color: white;
+	padding: 0 25px;
+	font-size: 25px;
+	border-radius: 10px;
+}
+
+#chkRem {
+	width: 15px;
+	height: 15px;
+	margin: 20px 10px 0 0;
+	font-size: 16px;
+}
+
+#btnSignIn, #btnSignOut {
+	width: 150px;
+	height: 80px;
+	background-color: white;
+	border-radius: 10px;
+	font-size: 25px;
+	color: black;
+}
+
+#btnSignIn {
+	float: left;
+}
+
+#btnSignOut {
+	float: right;
+}
