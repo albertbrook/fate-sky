@@ -71,3 +71,6 @@ function check(message) {
         return false;
     }
 }
+
+console.log("GitHub：https://github.com/albertbrook/fate-sky");
+console.log("文档：https://albertbrook.github.io/fate-sky/");

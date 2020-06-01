@@ -9,6 +9,7 @@
 	<link href="../CSS/default.css" rel="stylesheet" />
     <link href="../CSS/login.css" rel="stylesheet" />
     <script src="../JS/jquery-3.5.1.js"></script>
+    <script src="../JS/default.js"></script>
     <script src="../JS/login.js"></script>
 </head>
 <body>
