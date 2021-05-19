@@ -119,8 +119,8 @@ namespace DAL
         {
             string[] sql = new string[]
             {
-                "delete from Animes where Title=@Title",
-                "delete from AnimePages where Title=@Title"
+                "delete from AnimePages where Title=@Title",
+                "delete from Animes where Title=@Title"
             };
             MySqlParameter[] param = new MySqlParameter[] {
                 new MySqlParameter("@Title", title)
