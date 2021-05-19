@@ -1,4 +1,4 @@
-# FateSky
+﻿# FateSky
 > 数据库信息
 
 # 表
@@ -114,12 +114,6 @@ CREATE TABLE AnimePages (
     Image MEDIUMBLOB,
     CONSTRAINT ap_ibfk_title FOREIGN KEY (Title) REFERENCES Animes (Title)
 );
-INSERT INTO AnimeGrade VALUES(1, "不行");
-INSERT INTO AnimeGrade VALUES(2, "还行");
-INSERT INTO AnimeGrade VALUES(3, "可以");
-INSERT INTO AnimeGrade VALUES(4, "挺好");
-INSERT INTO AnimeGrade VALUES(5, "不错");
-INSERT INTO AnimeGrade VALUES(6, "很棒");
 ```
 
 ## AnimeGrade
@@ -137,6 +131,12 @@ CREATE TABLE AnimeGrade (
     Depict VARCHAR(200) NOT NULL,
     CONSTRAINT ag_chk_level CHECK (Level >= 1 AND Level <= 6)
 );
+INSERT INTO AnimeGrade VALUES(1, "不行");
+INSERT INTO AnimeGrade VALUES(2, "还行");
+INSERT INTO AnimeGrade VALUES(3, "可以");
+INSERT INTO AnimeGrade VALUES(4, "挺好");
+INSERT INTO AnimeGrade VALUES(5, "不错");
+INSERT INTO AnimeGrade VALUES(6, "很棒");
 ```
 
 ## Notes
